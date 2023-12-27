@@ -3,36 +3,166 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HamburgerGeming</title>
-    <link rel="stylesheet" href="setil.css" />
+    <title>Chirax</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
-      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
-      crossorigin="anonymous"
     />
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <div class="logo"><h1>Chirax</h1></div>
-      <div class="openMenu">
-        <i><p>s</p></i>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">CHIR<span>AX</span></a>
+
+      <div class="navbar-nav">
+        <a href="#lobby">Lobby</a>
+        <a href="Library.html">Library</a>
+        <a href="#about">About Us</a>
       </div>
-      <ul class="mainMenu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Library</a></li>
-      </ul>
+
+      <div class="navbar-extra">
+        <a href="#titleEvent" id="calendar"><i data-feather="calendar"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
     </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+
+    <section class="hero" id="lobby">
+      <main class="content">
+        <h1>Live with <span>Love</span></h1>
+        <p>
+          haii, ini website ku dan pacarku, di website ini tersimpan banyak
+          kenangan kita berdua mulai dari yang suka sampai duka, aku membuat
+          website ini agar kenangan kita yang berharga tidak pudar oleh waktu
+          karena
+          <span>"Love is eternal and memories are the most beautiful things you
+            will ever have"<span>
+          
+            </p>
+            <a href="Library.html" class="cta">Galeri Foto</a>
+          </main>
+    </section>
+    <!-- Hero Section End -->
+
+
+    <!-- Event Section Start-->
+    <section class="wrap" id="wrap" >
+      <div class="event" id="event">
+        <h2 class="titleEvent" id="titleEvent">Ulang Tahun Chirgiaa</h2>
+          <img class="imgEvent" src="image/GeaBirthday.jpg" id="imgevent">
+          <h3 class="subtitleEvent" >Selamat Ulang Tahun!!! </h3>
+          <div class="txtcont">
+            <h3 class="subtitleEvent2">
+              <span id="Chirgia">Chirgia</span> <span id="Arundati">Arundati</span> <span id="Sulaksono">Sulaksono</span></h3>
+          </div>
+          <div class="botGift" onclick="togglePopup()">
+            <div class="gift">
+
+              <div class="ribbon"></div>
+              <div class="ribbon1"></div>
+              <img class="ribbon2" src="Random/Ribbon.png">
+            </div>
+          </div>  
+                           <!-- Popup Gift Start-->
+    <div class="popup" id="popup-1">
+      <div class="overlay" onclick="togglePopup()"></div>
+      <div class="content">
+        <div class="closeBtn" onclick="togglePopup()">&times;</div>
+        <h1>Selamat Ulang Tahun Geakuuu</h1>
+        <p>Yeayyyy gaa kerasa umurmuu udah 18 tahun ajahh lebih tua ketimbang akuu.
+          Semoga Geaa bisa jadi orang yang berbakti, berguna ,serta sayangg orang tuaa.
+          Akuu doain juga supaya kamu bisa lolos PTN dan jurusan yang kamuu mauu dan minati.
+          Di umur yang ke-18 inii aku harapp kamu masihh sama aku sampai selama-lamanyaa. 
+          Aku mintaa maaf juga kalau ada salah sama kamuu, maaf jugaa kalauu aku masih belum 
+          bisa ngebales utang budi akuu kepada muu, kamu soalnya baikk betull hehee maacih buat
+          puyonya sayangkuu.<br> hihihii, sekian dulu yahhh buat surat ucapankuu inii semoga kamu
+          sama hadiah yang aku beri inii, God bless uu geaa sayangkuu cintakuu imutkuu
+          <br><br><span class="p1">"Pacarnya Gea"<br>-Axel-</span>
+        </p>
+      </div>
+    </div>
+    <!-- Popup Gift End-->
+      </div>
+
+    </section>
+    <!-- Event Section End -->
+
+
+   
+
+    <!-- About Section Start -->
+
+    <section class="about" id="about">
+      <h2>Tentang <span id="Kami">Kami</span> <span>Berdua</span> </h2>
+      
+      </div>
+
+      <div class="cardWrap">
+        <div class="cardAxel">
+          <img class="imgA" src="Random/PP_AXEL.jpg" alt="FotoAxel">
+          <div class="cardA">
+            <h1 class="cardJudul">Axel</h1>
+            <p class="cardSub">Gea`s boyfriend</p>
+            <p class="cardInfo">
+              Hobby : Maen Game, Ketiduraan, Coding<br>
+              Fav Game : Roblox, Stardew Valley<br>
+              Fav Things : Laptop, Keyboard, Rubik<br>
+              Makanan : Kebab, Telur Gulung, Mie Jawa<br>
+              Minuman : Choco Mint SuperIndo, ChaTime Hazelnut, Air Putih
+            </p>
+
+          </div>
+        </div>
+
+        <div class="cardChirgia">
+          <img class="imgB" src="Random/IMG-20231209-WA0009.jpg" alt="FotoGea">
+          <div class="cardB">
+            <h1 class="cardJudul">Chirgia</h1>
+            <p class="cardSub">Axel`s girlfriend</p>
+            <p class="cardInfo">
+              Hobby : Dengerin musik, Makan, Tidur, Nyanyi-nyanyi sendiri<br>
+              Fav Game : Papa loui, Stardew Valley<br>
+              Fav Things : Handphone, Lip Balm, Earphone<br>
+              Makanan : Semuanya<br>
+              Minuman : Hot Choco, Soda, Teh
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Back To Top -->
+    <a href="#" class="backT">
+      <span class="material-symbols-outlined">
+        arrow_upward
+        </span>
+    </a>
+
 
     <!-- Feather icons -->
     <script>
       feather.replace();
     </script>
 
-    <script src="./app.js"></script>
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+
+  
+        
+
   </body>
 </html>
